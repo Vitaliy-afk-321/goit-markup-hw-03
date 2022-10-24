@@ -9,7 +9,12 @@
     --bgcolorfooter: #2F303A;
     --activebutton: #188CE8;
 }
-
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
 .list {
     list-style: none;
     margin-top: 0;
@@ -34,7 +39,19 @@ body {
     /* header */
 .header{
     background-color: var(--whitecolor);
-    display: inline
+    display: flex;
+    align-items: center;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+}
+.header_list_l{
+    display: flex;
+}
+.header_logo{
+    display: inline-block;
+    margin: 24px 93px 23px 215px;
 }
 .header_logo_web{
     color: var(--bluecolor);
@@ -59,15 +76,22 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin: 0;
     padding: 0;
+}
+
+.header_list_l .header_item:not(:last-child){
+margin-right: 50px;
 }
 .header_item_l{
     color: var(--blackcolor);
 }
 .header_nav_l{
-    margin: 0;
+    margin-left: 344px;
     padding: 0;
+    display: flex;
+}
+.header_nav_l .header_nav_l_a:not(:last-child) {
+    margin-right: 50px;
 }
 .header_nav_l_link{
     color: var(--graycolor);
@@ -243,8 +267,12 @@ h1 {
     text-align: center;
 }
 .benefits{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    display: flex;
+    margin: 94px 215px;
+    padding: 0;
+}
+.benefits .benefits_item:not(:last-child){
+    margin-right: 30px;
 }
 
 h2,h3,p{
@@ -278,11 +306,26 @@ font-weight: 700;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
 }
+
 .Whatwedo_l{
     margin-bottom: 50px;
+    display: flex;
+}
+.Whatwedo_l .Whatwedo_item:not(:last-child) {
+    margin-right: 30px;
 }
 .Ourteam{
     padding-top: 94px;
+}
+.Ourteam_l{
+    display: flex;
+}
+.Ourteam_l .Ourteam_item:not(:last-child) {
+    margin-right: 30px;
+}
+.Ourteam_item{
+    background-color: var(--whitecolor);
+    width: 270px;
 }
 .Ourteam_h3{
     font-weight: 500;
@@ -304,4 +347,6 @@ font-weight: 700;
 .team{
 background-color: var(--buttoncolor);
 padding-bottom: 94px;
+flex-direction: column;
+align-items: center;
 }
