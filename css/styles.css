@@ -32,8 +32,10 @@ body {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
-    outline: 2px solid tomato;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 0px solid tomato;
 }
 
     /* header */
@@ -51,7 +53,7 @@ body {
 }
 .header_logo{
     display: inline-block;
-    margin: 24px 93px 23px 215px;
+    margin-right: 93px;
 }
 .header_logo_web{
     color: var(--bluecolor);
@@ -76,7 +78,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: 0;
+    padding: 32px 0px;
 }
 
 .header_list_l .header_item:not(:last-child){
@@ -86,7 +88,7 @@ margin-right: 50px;
     color: var(--blackcolor);
 }
 .header_nav_l{
-    margin-left: 344px;
+    margin-left: auto;
     padding: 0;
     display: flex;
 }
@@ -201,10 +203,8 @@ margin-right: 50px;
 .footer_l{
     color: var(--whitecolor);
     display: inline-block;
-    margin-top: 60px;
-    margin-left: 215px;
-    margin-bottom: 20px;
-
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 .footer_list_adr{
     color: var(--whitecolor);
@@ -221,9 +221,7 @@ margin-right: 50px;
     margin-top: 0;
     margin-bottom: 9px;
 }
-.footer_a{
-    margin-left: 215px;
-}
+
 .footer_list_mail,
 .footer_list_tel{
     font-family: 'Roboto';
@@ -234,13 +232,18 @@ margin-right: 50px;
     letter-spacing: 0.03em;
      color: rgba(255, 255, 255, 0.6);
 }
-.footer_list_mail{
-    margin-bottom: 9px;
+
+.footer_list_tel{
+    padding-bottom: 60px;
 }
 
 
-/* Main Index */
 
+/* Main Index */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 h1 {
     color: var(--whitecolor);
         font-weight: 900;
@@ -268,8 +271,6 @@ h1 {
 }
 .benefits{
     display: flex;
-    margin: 94px 215px;
-    padding: 0;
 }
 .benefits .benefits_item:not(:last-child){
     margin-right: 30px;
@@ -299,7 +300,7 @@ h2,h3,p{
 
 .Whatwedo,
 .Ourteam{
-font-weight: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center; 
@@ -308,17 +309,16 @@ font-weight: 700;
 }
 
 .Whatwedo_l{
-    margin-bottom: 50px;
     display: flex;
+    padding: 0;
 }
 .Whatwedo_l .Whatwedo_item:not(:last-child) {
     margin-right: 30px;
 }
-.Ourteam{
-    padding-top: 94px;
-}
+
 .Ourteam_l{
     display: flex;
+    padding: 0px;
 }
 .Ourteam_l .Ourteam_item:not(:last-child) {
     margin-right: 30px;
@@ -326,6 +326,8 @@ font-weight: 700;
 .Ourteam_item{
     background-color: var(--whitecolor);
     width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 .Ourteam_h3{
     font-weight: 500;
@@ -346,7 +348,4 @@ font-weight: 700;
 }
 .team{
 background-color: var(--buttoncolor);
-padding-bottom: 94px;
-flex-direction: column;
-align-items: center;
 }
